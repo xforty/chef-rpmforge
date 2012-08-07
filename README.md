@@ -1,5 +1,8 @@
-Description
-===========
+chef-rpmforge
+=============
+version 1.0.0 - [changelog](https://github.com/xforty/chef-rpmforge/blob/master/CHANGELOG.md)
+
+### Description
 
 Adds the rpmforge repo to yum for redhat based distros.  There are many
 common packages that aren't available or are severely out-of-date in the
@@ -8,17 +11,16 @@ able to install software later in the run list.
 
 See http://dag.wieers.com/rpm/FAQ.php for more info.
 
-Requirements
-============
+### Requirements
 
-None
+* None
 
-Attributes
-==========
+### Attributes
 
-* default[:rpmforge][:rpm_url] = The url of the rpm to download and add.
+#### default
 
-Usage
-=====
+* `default['rpmforge']['rpm_url']` - The url of the rpm to download and add.
+
+### Usage
 
 Include this recipe in your own recipe.
