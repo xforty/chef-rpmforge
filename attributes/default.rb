@@ -18,4 +18,4 @@
 # limitations under the License.
 #
 
-default[:rpmforge][:rpm_url] = "http://apt.sw.be/redhat/el5/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm"
+default['rpmforge']['rpm_url'] = "http://apt.sw.be/redhat/el5/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm"

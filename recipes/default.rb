@@ -22,7 +22,7 @@
 case node["platform"]
 when "centos", "redhat", "fedora"
   execute "add_rpmforge_repo" do
-    command "rpm -Uhv #{node[:rpmforge][:rpm_url]}"
+    command "rpm -Uhv #{node['rpmforge']['rpm_url']}"
     not_if { File.exists?("/etc/yum.repos.d/rpmforge.repo") }
   end
 end
